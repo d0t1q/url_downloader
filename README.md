@@ -44,4 +44,4 @@ with tarfile.open('./files.tar.gz', mode='w:gz', compresslevel=9) as tar:
 In case your urls.txt file has some links that are not properly encoded in the URL format, I have included a simple script that will encode them so that they can be used in this script
 
 1. Create a file called urls.txt and add the URLs of the files you want to download, one per line.
-2. Run the script with python downloader.py
+2. Run the script with python encoder.py
