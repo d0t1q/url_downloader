@@ -1,0 +1,3 @@
+http://exampleweb.com/somefile/1.txt
+http://exampleweb.com/somefile2/2.txt
+http://exampleweb.com/somefile2/more/3.txt
