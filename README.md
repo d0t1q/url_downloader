@@ -4,7 +4,7 @@ This script reads a list of file URLs from a file called `urls.txt` and download
 ## Usage
 
 1. Create a file called urls.txt and add the URLs of the files you want to download, one per line.
-2. Run the script with python script.py
+2. Run the script with python downloader.py
 3. The files will be downloaded to the files directory and a hashes.csv file will be created with the file name and SHA1 hash of each file.
 4. The entire files directory will be compressed into a files.tar.gz file.
 
@@ -39,3 +39,9 @@ with open('urls.txt') as file:
 with open('hashes.csv', 'a') as csv_file:
 with tarfile.open('./files.tar.gz', mode='w:gz', compresslevel=9) as tar:
 ```
+
+### encoder.py
+In case your urls.txt file has some links that are not properly encoded in the URL format, I have included a simple script that will encode them so that they can be used in this script
+
+1. Create a file called urls.txt and add the URLs of the files you want to download, one per line.
+2. Run the script with python downloader.py
