@@ -9,7 +9,6 @@ This script reads a list of file URLs from a file called `urls.txt` and download
 4. The entire files directory will be compressed into a files.tar.gz file.
 
 ## Dependencies
-
 This script requires the following modules to be installed:
 
 * `os`
@@ -21,20 +20,17 @@ This script requires the following modules to be installed:
 * `tarfile`
 
 ## Error Handling
-
-    If the `urls.txt` file is not found, the script will exit and print an error message.
-    If there is an error while reading the `urls.txt` file, the script will exit and print an error message.
-    If there is an error while downloading a file, the script will print an error message but will continue to download the remaining files.
-    If there is an error while creating the `files.tar.gz` file, the script will print an error message but will continue to execute.
+If the `urls.txt` file is not found, the script will exit and print an error message.
+If there is an error while reading the `urls.txt` file, the script will exit and print an error message.
+If there is an error while downloading a file, the script will print an error message but will continue to download the remaining files.
+If there is an error while creating the `files.tar.gz` file, the script will print an error message but will continue to execute.
 
 ## Additional Features
-
-    If file already exists, it skips the download and continues to the next file.
-    Use `concurrent.futures` to download multiple files at a time and tqdm to display a progress bar.
-    Use `tarfile` to compress the entire `files` directory with highest compression level.
+If file already exists, it skips the download and continues to the next file.
+Use `concurrent.futures` to download multiple files at a time and tqdm to display a progress bar.
+Use `tarfile` to compress the entire `files` directory with highest compression level.
 
 ## Note
-
 In case you want to change the directory or filename you can easily change it from the code. You may need to change the directory paths and filenames in the following lines of code:
 
 ```python
